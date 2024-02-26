@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>フィルタリング機能とモーダルを実装</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+</head>
+<body>
+    <h1>フィルタリング機能とモーダルを実装</h1>
+    <div class="container">
+        <div class="btn-wrapper">
+            <button type="button" data-filter="all">すべて</button>
+            <button type="button" data-filter=".music">音楽</button>
+            <button type="button" data-filter=".game">ゲーム</button>
+            <button type="button" data-filter=".anime">キャラクター、アニメ</button>
+            <button type="button" data-sort="order:asc">人気順</button>
+        </div><!-- /.btn-wrapper -->
+        <div class="contents">
+            <div class="mix music" data-order="9">
+                <a href="https://www.youtube.com/live/lrmDoJkZjns?si=6-KWf5URypeKwi_B" data-fancybox>
+                    <img src="img/01.jpg" alt="">
+                </a>
+            </div><!-- .mix -->
+            <div class="mix music" data-order="8">
+                <a href="https://www.youtube.com/live/GEKLmXNUFaE?si=-T15cOONxtTWKzzT" data-fancybox>
+                    <img src="img/02.jpg" alt="">
+                </a>
+            </div><!-- .mix -->
+            <div class="mix music anime" data-order="7">
+                <a href="https://youtu.be/-Zk7Y-8mf6Q?si=wHKcs9UI0E5Rtn73" data-fancybox>
+                    <img src="img/03.jpg" alt="">
+                </a>
+            </div><!-- .mix -->
+            <div class="mix game" data-order="2">
+                <a href="https://youtu.be/Dn2vI8Bp0l8?si=JvwX0a6FKIuKNCEo" data-fancybox>
+                    <img src="img/04.jpg" alt="">
+                </a>
+            </div><!-- .mix -->
+            <div class="mix game" data-order="5">
+                <a href="https://youtu.be/k15ZNtiU5DA?si=46rmmRlDgGpPlaBK" data-fancybox>
+                    <img src="img/05.jpg" alt="">
+                </a>
+            </div><!-- .mix -->
+            <div class="mix game" data-order="6">
+                <a href="https://youtu.be/b3m7VbjKROw?si=41McjT3cYBuTZSBH" data-fancybox>
+                    <img src="img/06.jpg" alt="">
+                </a>
+            </div><!-- .mix -->
+            <div class="mix anime" data-order="4">
+                <a href="https://youtu.be/BSv9NheWtE4?si=tg5HJLb430GTEuER" data-fancybox>
+                    <img src="img/07.jpg" alt="">
+                </a>
+            </div><!-- .mix -->
+            <div class="mix anime" data-order="3">
+                <a href="https://youtu.be/awaMRZk7MS8?si=vUPwrZOUQBT4bwno" data-fancybox>
+                    <img src="img/08.jpg" alt="">
+                </a>
+            </div><!-- .mix -->
+            <div class="mix anime" data-order="1">
+                <a href="https://youtu.be/hYNmzKJfSgk?si=CcaLpqk20Xx8RZrJ" data-fancybox>
+                    <img src="img/09.jpg" alt="">
+                </a>
+            </div><!-- .mix -->
+        </div><!-- /.contents -->
+    </div><!-- /.container -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js/mixitup.js"></script>
+    <script>
+        let mixer = mixitup('.contents');
+    </script>
+</body>
+</html>
